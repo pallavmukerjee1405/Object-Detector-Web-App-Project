@@ -3,7 +3,7 @@ status_quo="";
 objects=[];
 
 function preload(){
-    img=loadImage('img1.jpg');
+    img=loadImage('img2.jpg');
 }
 
 function setup(){

@@ -1,6 +1,5 @@
 <html>
     <head>
-        <title>Object Detector Web App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,19 +12,14 @@
   <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
-    <body background="background.jpg">
+    <body background="background2.jpg">
         <center>
-            <h1 class="btn btn-warning heading">Object Detector(Home)</h1>
+            <h1 class="btn btn-warning heading">Object Detector</h1>
             <br><br>
-            <a href="fan.html" id="a1" class="btn btn-info">Fan</a>
+            <h3 class="btn btn-danger" id="status"></h3>
             <br><br>
-            <a href="ac.html" id="a2" class="btn btn-info">AC</a>
-            <br><br>
-            <a href="laptop.html" id="a3" class="btn btn-info">Bedroom</a>
-            <br><br>
-            <a href="" id="a4" class="btn btn-info">Laptop</a>
-            <br><br>
-            <a href="" id="a5" class="btn btn-info">Fridge</a>
+            <h3 class="btn btn-success" id="objects_detected"></h3>
         </center>
+        <button onclick="back();" class="btn btn-info">Back</button>
         </body>
 </html>
