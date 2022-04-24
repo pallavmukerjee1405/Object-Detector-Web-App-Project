@@ -1,3 +1,4 @@
+object_detector="";
 img="";
 status_quo="";
 objects=[];
@@ -31,15 +32,15 @@ function gotResult(error,results){
 }
 
 function draw(){
-    if(status_quo != ""){
+     if(status_quo != ""){
+        image(img,0,0,640,420);
         for(i=0;i<objects.length;i++){
-            document.getElementById("status").innerHTML="There are " + objects.length + " big objects in the image from which cocossd model has detected" + objects.length + " objects";
-
+            document.getElementById("status").innerHTML="Status : Objects Detected";
             percent=floor(objects[i].confidence*100);
-            fill('#FF0000');
+            fill(255,0,0);
             text(objects[i].label + " " + percent + "%" + objects[i].x,objects[i].y);
             noFill();
-            stroke('#FF0000');
+            stroke(255,0,0);
             rect(objects[i].x,objects[i].y,objects[i].width,objects[i].height);
 
         }
